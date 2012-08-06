@@ -103,7 +103,7 @@ Gem::Specification.new do |s|
     "spec/trace_plot_spec.rb",
     "spec/xy_plot_spec.rb"
   ]
-  s.homepage = "http://github.com/cerbero/bio-incanter"
+  s.homepage = "https://github.com/cerbero/bioruby-incanter"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.15"
