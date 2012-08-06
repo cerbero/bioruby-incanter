@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "bio-incanter"
-  gem.homepage = "http://github.com/cerbero/comics"
+  gem.homepage = "http://github.com/cerbero/bio-incanter"
   gem.license = "MIT"
   gem.summary = %Q{Build Graph with Jruby}
   gem.description = %Q{A Jruby wrapper to Incanter lib}
