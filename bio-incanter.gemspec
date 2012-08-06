@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bio-incanter.gemspec",
     "doc/AreaChart.html",
     "doc/BarChart.html",
     "doc/BlandAltman.html",
