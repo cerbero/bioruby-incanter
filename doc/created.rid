@@ -1,0 +1,18 @@
+Mon, 06 Aug 2012 12:37:43 +0200
+LICENSE.txt	Tue, 31 Jul 2012 10:22:48 +0200
+README.rdoc	Mon, 06 Aug 2012 12:13:33 +0200
+lib/function_plot/function_plot.rb	Wed, 01 Aug 2012 17:34:43 +0200
+lib/pie_chart/pie_chart.rb	Wed, 01 Aug 2012 15:23:52 +0200
+lib/bio-incanter.rb	Thu, 02 Aug 2012 11:57:29 +0200
+lib/heat_map/heat_map.rb	Wed, 01 Aug 2012 17:47:53 +0200
+lib/box_plot/box_plot.rb	Wed, 01 Aug 2012 15:38:04 +0200
+lib/time_chart/time_chart.rb	Thu, 02 Aug 2012 11:42:05 +0200
+lib/line_chart/line_chart.rb	Thu, 02 Aug 2012 10:37:31 +0200
+lib/bar_chart/bar_chart.rb	Mon, 06 Aug 2012 12:37:13 +0200
+lib/histogram/histogram.rb	Thu, 02 Aug 2012 10:27:09 +0200
+lib/bland_altman/bland_altman.rb	Wed, 01 Aug 2012 15:22:48 +0200
+lib/trace_plot/trace_plot.rb	Thu, 02 Aug 2012 11:47:37 +0200
+lib/qq_plot/qq_plot.rb	Thu, 02 Aug 2012 10:46:30 +0200
+lib/scatter_plot/scatter_plot.rb	Thu, 02 Aug 2012 11:00:06 +0200
+lib/area_chart/area_chart.rb	Wed, 01 Aug 2012 15:23:18 +0200
+lib/xy_plot/xy_plot.rb	Thu, 02 Aug 2012 11:56:59 +0200

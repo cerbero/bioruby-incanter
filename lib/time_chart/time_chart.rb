@@ -1,4 +1,40 @@
 class TimeChart
+# ==== Attributes  
+    #  
+    # * +x+ - a vector of Int Sequence passed in for the x axis should be number of milliseconds from the epoch (1 Janurary 1970).
+    # * +y+ - a vector of Float numeric value   
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    #  
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:x_label+ - (default 'Categories') Label of x ass   
+    # * +:y_label+ -  (default 'Value') Label of y ass
+    # * +:legend+ - (default false) Prints legend   
+    # * +:vertical+ -  (default true) The orientation of the plot   
+    # * +:group_by+ -  (default nil) A vector of values used to group the values into series within each category. 
+    # * +:height+ - (default 1500)  Graph height
+    # * +:width+ -  (default 800)   Graph width
+    # * +:file_name+ - (default sample.jpg) Graph File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    # 
+    #    time = [1200,23330]
+    #    values = [1.0,2.0]
+    #    params = {"title" => "Time Go On"}
+    #    plot = TimeChart.new(time,values,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+    #    plot.save
+
 	def initialize(x,y,params)
 		@y=check_val(y)
 		@x=check_val_int(x)

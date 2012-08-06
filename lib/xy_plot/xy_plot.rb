@@ -1,4 +1,42 @@
 class XyPlot
+# ==== Attributes  
+    #  
+    # * +valuex+ - a vector of Float numeric value   
+    # * +valuey+ - a vector of Float numeric value   
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    #  
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:x_label+ - (default 'Categories') Label of x ass   
+    # * +:y_label+ -  (default 'Value') Label of y ass
+    # * +:legend+ - (default false) Prints legend   
+    # * +:vertical+ -  (default true) The orientation of the plot   
+    # * +:group_by+ -  (default nil) A vector of values used to group the values into series within each category.
+    # * +:points+ - (default false) includes point-markers
+    # * +:height+ - (default 1500)  Graph height
+    # * +:width+ -  (default 800)   Graph width
+    # * +:file_name+ - (default sample.jpg) Graph File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    # 
+    #    x = [1.0,2.0,3.0]
+    #    y = [1.0,2.0,3.0]
+    #    params = {"title" => "XY Plot","points"=>"true"}
+    #    plot = XyPlot.new(x,y,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+    #    plot.save
+
+
 	def initialize(valuex,valuey,params)
 		@value_x=check_val(valuex)
 		@value_y=check_val(valuey)

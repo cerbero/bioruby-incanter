@@ -1,6 +1,39 @@
 class BoxPlot
-	def initialize(group,value,params)
-		@group=check_grp(group)
+# ==== Attributes  
+    #  
+    # * +value+ - a vector of Float numeric value   
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:x_label+ - (default 'Categories') Label of x ass   
+    # * +:y_label+ -  (default 'Value') Label of y ass
+    # * +:legend+ - (default false) Prints legend   
+    # * +:vertical+ -  (default true) The orientation of the plot   
+    # * +:group_by+ -  (default nil) A vector of values used to group the values into series within each category. 
+    # * +:height+ - (default 1500)  Graph height
+    # * +:width+ -  (default 800)   Graph width
+    # * +:file_name+ - (default sample.jpg) Graph File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    # 
+    #    values = [1.0,2.0,3.0]
+    #    params = {"title" => "Popolation of middle heart","x_label"=>"Popolation","y_label"=>"greed"}
+    #    plot = BoxPlot.new(categories,values,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+    #    plot.save
+
+
+	def initialize(value,params)
 		@value=check_val(value)
 		@params=self.check_par(params)
 	end
@@ -73,9 +106,6 @@ class BoxPlot
         	return params_map
 	end
 
-	def getGroup
-		@group
-	end
 
 	def getValue
 		@value 
@@ -89,14 +119,14 @@ class BoxPlot
 	def save
 		begin
         		a = Java::ComDomain::clocomics
-       			a.save_box(self.getGroup,self.getValue,self.getParams)
+       			a.save_box(self.getValue,self.getParams)
 		rescue Exception => ex
 		end
 	end
 	def view
 		 begin
                         a = Java::ComDomain::clocomics
-                        a.view_box(self.getGroup,self.getValue,self.getParams)
+                        a.view_box(self.getValue,self.getParams)
                 rescue Exception => ex
                 end
 

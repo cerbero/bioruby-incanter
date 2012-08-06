@@ -1,7 +1,40 @@
 class BlandAltman
-	def initialize(group,value,params)
-		@group=check_val(group)
-		@value=check_val(value)
+# ==== Attributes  
+    #  
+    # * +x_1+ - a vector of Float numeric value  
+    # * +x_2+ - a vector of Float numeric value   
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    #  
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:legend+ - (default false) Prints legend   
+    # * +:vertical+ -  (default true) The orientation of the plot   
+    # * +:height+ - (default 1500)  Graph height
+    # * +:width+ -  (default 800)   Graph width
+    # * +:file_name+ - (default sample.jpg) Graph File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    # 
+    #    values_1= [6.0,2.0,8.4]
+    #    values_2 = [1.0,2.0,3.0]
+    #    params = {"title" => "My_PLot"}
+    #    plot = BlandAltman.new(values_1,values_2,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+    #    plot.save
+
+	def initialize(x_1,x_2,params)
+		@group=check_val(x_1)
+		@value=check_val(x_2)
 		@params=self.check_par(params)
 	end
 

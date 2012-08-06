@@ -1,4 +1,40 @@
 class FunctionPlot
+# ==== Attributes  
+    #  
+    # * +function+ - a String function in Clojure Style
+    # * +min+ - Lower Bound   
+    # * +max+ - Upper Bound
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    #  
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:x_label+ - (default 'Categories') Label of x ass   
+    # * +:y_label+ -  (default 'Value') Label of y ass
+    # * +:legend+ - (default false) Prints legend   
+    # * +:height+ - (default 1500)  Graph height
+    # * +:width+ -  (default 800)   Graph width
+    # * +:file_name+ - (default sample.jpg) Graph File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    #
+    #    function = "(defn cubic [x] (+ (* x x x) (* 2 x x) (* 2 x) 3))" 
+    #    min = 0
+    #    max = 50
+    #    params = {"title" => "Plot my Function"}
+    #    plot = FunctionPlot.new(function,min,max,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+    #    plot.save
+ 
 	def initialize(function,min,max,params)
 		@params=self.check_par(params)
 		@function=function

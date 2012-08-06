@@ -1,4 +1,43 @@
 class ScatterPlot
+# ==== Attributes  
+    #  
+    # * +valuex+ - a vector of Float numeric value
+    # * +valuey+ - a vector of Float numeric value   
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:x_label+ - (default 'Categories') Label of x ass   
+    # * +:y_label+ -  (default 'Value') Label of y ass
+    # * +:legend+ - (default false) Prints legend   
+    # * +:vertical+ -  (default true) The orientation of the plot   
+    # * +:group_by+ -  (default nil) A vector of values used to group the values into series within each category. 
+    # * +:density+ - (default false) Chart will represent density instead of frequency 
+    # * +:nbins+ - (default 10) Number of bins
+    # * +:gradient+ - (default false) Use gradient on bars
+    # * +:height+ - (default 1500)  Chart height
+    # * +:width+ -  (default 800)   Chart width
+    # * +:file_name+ - (default sample.jpg) Chart File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    # 
+    #    valuesx = [1.0,2.0,3.0]
+    #    valuesy = [1.0,2.0,3.0]
+    #    params = {}
+    #    plot = ScatterPlot.new(valuesx,valuesy,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+    #    plot.save
+
+
 	def initialize(valuex,valuey,params)
 		@value_x=check_val(valuex)
 		@value_y=check_val(valuey)

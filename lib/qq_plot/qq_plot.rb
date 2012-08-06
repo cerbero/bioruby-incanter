@@ -1,5 +1,33 @@
-class BoxPlot
-	def initialize(group,value,params)
+class QqPlot
+# ==== Attributes  
+    #  
+    # * +value+ - a vector of Float numeric value   
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:vertical+ -  (default true) The orientation of the plot   
+    # * +:height+ - (default 1500)  Graph height
+    # * +:width+ -  (default 800)   Graph width
+    # * +:file_name+ - (default sample.jpg) Graph File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    # 
+    #    values = [1.0,2.0,3.0]
+    #    params = {"title" => "A QQ Plot"}
+    #    plot = QqPlot.new(values,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+
+	def initialize(value,params)
 		@value=check_val(value)
 		@params=self.check_par(params)
 	end

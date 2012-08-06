@@ -11,6 +11,14 @@ require 'area_chart/area_chart.rb'
 require 'bar_chart/bar_chart.rb'
 require 'bland_altman/bland_altman.rb'
 require 'box_plot/box_plot.rb'
+require 'function_plot/function_plot.rb'
+require 'histogram/histogram.rb'
+require 'line_chart/line_chart.rb'
+require 'qq_plot/qq_plot.rb'
+require 'scatter_plot/scatter_plot.rb'
+require 'time_chart/time_chart.rb'
+require 'xy_plot/xy_plot.rb'
+require 'trace_plot/trace_plot.rb'
 
 java_import "java.util.HashMap"
 
@@ -32,6 +40,19 @@ def check_val(value)
         }
 	return value
 end
+
+
+def check_val_int(value)
+        value.each {|item|
+                if item.class!= Fixnum
+                        raise "Error : Vector of point  must be Integer"
+                end     
+        }
+        return value
+end
+
+
+
 =begin
 def check_par(params)
 	hash = Hash.new

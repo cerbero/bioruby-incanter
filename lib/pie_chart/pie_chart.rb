@@ -1,4 +1,37 @@
 class PieChart
+# ==== Attributes  
+    #  
+    # * +group+ - a vector of String categories  
+    # * +value+ - a vector of Float numeric value   
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    #  
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:legend+ - (default false) Prints legend   
+    # * +:vertical+ -  (default true) The orientation of the plot   
+    # * +:height+ - (default 1500)  Graph height
+    # * +:width+ -  (default 800)   Graph width
+    # * +:file_name+ - (default sample.jpg) Graph File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    # 
+    #    categories = ["uman","elf","dwarfs"]
+    #    values = [1.0,2.0,3.0]
+    #    params = {"title" => "Popolation of middle heart","x_label"=>"Popolation","y_label"=>"greed"}
+    #    plot = PieChart.new(categories,values,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+    #    plot.save
+
 	def initialize(group,value,params)
 		@group=check_grp(group)
 		@value=check_val(value)

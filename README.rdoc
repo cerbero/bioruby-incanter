@@ -1,18 +1,15 @@
-= comics
+= bio-incanter
 
-Comics is a Jruby gem for view and save graphics. 
-Is based on Clojure library know as Incanter.  
+bio-incanter is a Jruby bio-gem for use Incanter lib. Incanter is a Clojure lib to save and view graphics.
 
 == Use 
 
-call-seq:
-PieChart.new(arg1, arg2, arg3)
+* Select your plot class
+* Instance that class
+* Call save method to save your plot
+* Call view method to view your plot
 
-arg1 -> Vector of String . It's rappresent the categories 
-arg2 -> Vector of Float . 
-
-
-== Contributing to comics
+== Contributing to bio-incanter
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.

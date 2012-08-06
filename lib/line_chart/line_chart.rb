@@ -1,4 +1,40 @@
-class AreaChart
+class LineChart
+# ==== Attributes  
+    #  
+    # * +group+ - a vector of String categories  
+    # * +value+ - a vector of Float numeric value   
+    # * +parms+ - an Hash whit parametrs value  
+    #  
+    # ==== Parms  
+    #  
+    # This Hash contain parmas . 
+    # List of key permitted .   
+    # 
+    # 
+    #  
+    # * +:title+ - (default "A sample Graph") Graph main title  
+    # * +:x_label+ - (default 'Categories') Label of x ass   
+    # * +:y_label+ -  (default 'Value') Label of y ass
+    # * +:legend+ - (default false) Prints legend   
+    # * +:vertical+ -  (default true) The orientation of the plot   
+    # * +:group_by+ -  (default nil) A vector of values used to group the values into series within each category. 
+    # * +:gradient + - (default false)  Use gradient on bars
+    # * +:height+ - (default 1500)  Graph height
+    # * +:width+ -  (default 800)   Graph width
+    # * +:file_name+ - (default sample.jpg) Graph File Name/Path to save plot. You can chose jpg or pdf   
+    #
+    # ==== Examples  
+    #   
+    # Class Usage:  
+    # 
+    #    categories = ["uman","elf","dwarfs"]
+    #    values = [1.0,2.0,3.0]
+    #    params = {"title" => "Popolation of middle heart","x_label"=>"Popolation","y_label"=>"greed"}
+    #    plot = LineChart.new(categories,values,params)
+    #    #To view
+    #    plot.view 
+    #    #to save
+    #    plot.save
 	def initialize(group,value,params)
 		@group=check_grp(group)
 		@value=check_val(value)
