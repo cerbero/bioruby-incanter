@@ -1,6 +1,16 @@
 = comics
 
-Description goes here.
+Comics is a Jruby gem for view and save graphics. 
+Is based on Clojure library know as Incanter.  
+
+== Use 
+
+call-seq:
+PieChart.new(arg1, arg2, arg3)
+
+arg1 -> Vector of String . It's rappresent the categories 
+arg2 -> Vector of Float . 
+
 
 == Contributing to comics
  

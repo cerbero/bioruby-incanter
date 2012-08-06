@@ -14,13 +14,15 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "comics"
+  gem.name = "bio-incanter"
   gem.homepage = "http://github.com/cerbero/comics"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Build Graph with Jruby}
+  gem.description = %Q{A Jruby wrapper to Incanter lib}
   gem.email = "matteo.picciolini@gmail.com"
   gem.authors = ["Matteo Picciolini"]
+  #gem.require_paths << 'ext'
+  #gem.files.include << 'ext/clocomics-1.0.0-standalone.jar'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
